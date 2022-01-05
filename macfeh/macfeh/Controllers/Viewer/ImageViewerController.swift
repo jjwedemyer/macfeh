@@ -84,11 +84,12 @@ class ImageViewerController: NSViewController, NSWindowDelegate {
                                                      display: false);
                     }
                     else {
-                        self.window!.setFrame(NSRect(x: self.window!.frame.origin.x,
-                                                     y: self.window!.frame.origin.y,
-                                                     width: imagePixelSize.width,
-                                                     height: imagePixelSize.height),
-                                                     display: false);
+                      let scale = self.window!.backingScaleFactor
+                      self.window!.setFrame(NSRect(x: self.window!.frame.origin.x,
+                                                   y: self.window!.frame.origin.y,
+                                                   width: imagePixelSize.width/scale,
+                                                   height: imagePixelSize.height/scale),
+                                                   display: false);
                     }
 
                     self.window!.title = NSString(string: atPath).lastPathComponent;
