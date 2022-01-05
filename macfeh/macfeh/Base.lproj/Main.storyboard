@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
-        <plugIn identifier="com.apple.imagekit.ibplugin" version="13771"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
+        <plugIn identifier="com.apple.imagekit.ibplugin" version="19529"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -197,7 +196,7 @@
         <scene sceneID="dEB-HL-Vun">
             <objects>
                 <windowController showSeguePresentationStyle="single" id="LSH-Ko-J7k" userLabel="Preferences Window Controller" sceneMemberID="viewController">
-                    <window key="window" title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" tabbingMode="disallowed" id="N9E-5i-TyD" customClass="Window" customModule="macfeh" customModuleProvider="target">
+                    <window key="window" title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" tabbingMode="disallowed" id="N9E-5i-TyD" customClass="Window" customModule="macfeh" customModuleProvider="target">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="229" y="249" width="345" height="99"/>
@@ -227,7 +226,6 @@
                         <rect key="frame" x="-24" y="0.0" width="345" height="99"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <font key="font" metaFont="message"/>
-                        <tabViewItems/>
                         <connections>
                             <outlet property="delegate" destination="caW-iv-Ge8" id="v2T-nE-OLX"/>
                         </connections>
@@ -246,11 +244,11 @@
             <objects>
                 <viewController title="General" id="1aG-YB-5jA" userLabel="Preferences General View Controller" customClass="GeneralPreferencesController" customModule="macfeh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="fKt-h7-5Fe">
-                        <rect key="frame" x="0.0" y="0.0" width="345" height="99"/>
+                        <rect key="frame" x="0.0" y="0.0" width="345" height="102"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="1000" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XfS-lP-otL" userLabel="Viewer Defaults Section Label">
-                                <rect key="frame" x="26" y="62" width="293" height="17"/>
+                                <rect key="frame" x="26" y="66" width="293" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="289" id="ngG-QV-9MQ"/>
                                 </constraints>
@@ -261,7 +259,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Nbk-ZQ-iZH" userLabel="Show Background Checkbox">
-                                <rect key="frame" x="48" y="38" width="249" height="18"/>
+                                <rect key="frame" x="48" y="41" width="247" height="18"/>
                                 <buttonCell key="cell" type="check" title="Show background" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="03L-dn-GcW">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -271,7 +269,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="hq7-KP-K6M" userLabel="Enable Shadow Checkbox">
-                                <rect key="frame" x="48" y="18" width="249" height="18"/>
+                                <rect key="frame" x="48" y="19" width="247" height="18"/>
                                 <buttonCell key="cell" type="check" title="Enable shadow" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="e2X-3e-gcA">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -307,7 +305,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController storyboardIdentifier="imageViewerWindowController" id="B8D-0N-5wS" userLabel="Image Viewer Window Controller" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" tabbingMode="disallowed" id="IQv-IB-iLA" customClass="Window" customModule="macfeh" customModuleProvider="target">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" tabbingMode="disallowed" id="IQv-IB-iLA" customClass="Window" customModule="macfeh" customModuleProvider="target">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
@@ -339,7 +337,7 @@
                                     <constraint firstAttribute="height" constant="16" id="Zpw-PP-KXN"/>
                                 </constraints>
                             </progressIndicator>
-                            <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayc-qS-gaP" userLabel="Scroll View - Image View" customClass="ImageViewerScrollView" customModule="macfeh" customModuleProvider="target">
+                            <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayc-qS-gaP" userLabel="Scroll View - Image View" customClass="ImageViewerScrollView" customModule="macfeh" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="Lx1-TI-0HF">
                                     <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
@@ -354,12 +352,12 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
                                 <edgeInsets key="contentInsets" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
-                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="iCt-5u-4QU">
-                                    <rect key="frame" x="0.0" y="254" width="480" height="16"/>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="iCt-5u-4QU">
+                                    <rect key="frame" x="-100" y="-100" width="465" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="sbX-G0-P3e">
-                                    <rect key="frame" x="464" y="0.0" width="16" height="270"/>
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="sbX-G0-P3e">
+                                    <rect key="frame" x="-100" y="-100" width="15" height="270"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
